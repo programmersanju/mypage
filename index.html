@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            position: fixed;
+            opacity: 0.6;
+        }
+
+        .nav {
+            color: white;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(90deg, rgb(71, 71, 237), rgb(41, 211, 230));
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-left {
+            font-size: 3rem;
+            padding: 10px;
+
+        }
+
+        .nav-left:hover {
+            background-color: black;
+            border-radius: 20px;
+            font-style: italic;
+            animation: sanjay 0.5s infinite;
+        }
+
+        @keyframes sanjay {
+            0% {
+                color: white;
+            }
+
+            30% {
+                color: red;
+            }
+
+            60% {
+                color: blue;
+            }
+
+            90% {
+                color: green;
+            }
+        }
+
+        .nav-right ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-right ul li a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            
+            padding: 10px;
+            transition: all 0.5s;
+        }
+
+        .nav-right ul li a:hover {
+            background-color: rgb(19, 2, 250);
+            border-radius: 20px;
+        }
+
+        .nav-right ul li {
+            list-style: none;
+        }
+
+        /* unite class */
+        .container {
+            margin: 100px 20px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            opacity: 0.7;
+        }
+
+        p {
+            margin: 20px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+        }
+
+        .left1 {
+            padding: 20px 0px;
+            width: 40%;
+        }
+
+        .right1 {
+            padding: 20px 0px;
+            width: 40%;
+        }
+
+        .redfont{
+            color:red;
+        }
+
+        @media screen and (max-width:800px)
+        {
+            html{
+                font-size: 10px;
+            }
+        }
+        @media screen and (max-width:450px)
+        {
+            html{
+                font-size: 14px;
+            }
+            .container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .left1,.right1{
+                padding: 0px;
+                width: 80%;
+            }
+            .nav-right ul li a{
+                font-size: 0.8rem;
+            }
+            .nav-left{
+                font-size: 1.2rem;
+                width: 20%;
+            }
+            .nav-right ul{
+                gap:7px
+            }
+        }
+        
+
+
+        /* container 1 */
+        
+
+        
+
+        /* container 2 */
+
+
+    </style>
+</head>
+
+<body>
+    <img src="bgcode.png" alt="ljsdf">
+    <header>
+        <div class="nav">
+            <div class="nav-left">Sanjay Valand</div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">My Project</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container con1">
+            <div class="left1">
+                <h1>Introduction to PHP</h1>
+                <p>
+                    PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic
+                    content, databases, session tracking, even build entire e-commerce sites. It is integrated with a
+                    number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft
+                    SQL Server.
+                </p>
+            </div>
+            <div class="right1">
+                <h1>History of PHP</h1>
+                <p>
+                    PHP was conceived sometime in the fall of 1994 by Rasmus Lerdorf. Early non-released versions were
+                    used on his home page to keep track of who was looking at his online resume. The first version used
+                    by others was available sometime in early 1995 and was known as the Personal Home Page Tools.
+                </p>
+            </div>
+        </div>
+
+        <div class="container con2">
+            <div class="left1">
+                <h1>Basic PHP Syntax</h1>
+                <p>
+                    A PHP script can be placed anywhere in the document.
+                </p>
+                <p>A PHP script starts with <code class="redfont"><<code>?php</code> </code> and ends with <code class="redfont">?></code>:</p>
+                <p>The default file extension for PHP files is "<code class="redfont">.php</code>".</p>
+                <p>A PHP file normally contains HTML tags, and some PHP scripting code.</p>
+            </div>
+            <div class="right1">
+                <h1>Example of basic Syntax</h1>
+                <p >
+                    <p>< <code>?php</code></p>
+                    <p>// PHP code goes here</p>
+                    <p>?></p>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left1">
+                <h1>Example code</h1>
+                <p>
+                    Below, we have an example of a simple PHP file,
+                </p>
+                <p>with a PHP script that uses a built-in PHP function</p>
+                <p>"<code class="redfont">echo</code>" to output the text "Hello World!" on a web page:</p>
+                <p><code style="font-weight: bold;">Note:</code> PHP statements end with a semicolon (<code class="redfont">;</code>).</p>
+            </div>
+            <div class="right1">
+                <p><code><</code>!DOCTYPE html></p>
+                <p><code><</code>html></p>
+                <p><code><</code>body></p>
+                <p><code><</code>?php</p>
+                <p> &nbsp; &nbsp; ECHO "Hello World!";</p>
+                <p> &nbsp; &nbsp; ECHO "Hello World!";</p>
+                <p> &nbsp; &nbsp; ECHO "Hello World!";</p>
+                <p><code><</code>/html></p>
+                <p><code><</code>/body></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
